@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>🏈 ~ Romantic BloodBowl</title>
+  </head>
+  <body>
+    <nav class="titular">
+      <img src="../BBprj/srcs/logo.png" style="height: 5rem; width: 10rem" />
+    </nav>
+    <main>
+      <nav class="navigation-topbar">
+        <ul class="topbar">
+          <li class="top-item" data-section-class="estadisticas">
+            ESTADÍSTICAS
+          </li>
+          <li class="top-item central" data-section-class="tabla">TABLA</li>
+          <li class="top-item" id="namecopa">COPA "HUEVO SERRANO 2020"</li>
+          <li class="top-item central" data-section-class="resultados">
+            RESULTADOS
+          </li>
+          <li class="top-item" data-section-class="new-match">
+            CARGAR NUEVO <strong>+</strong>
+          </li>
+        </ul>
+      </nav>
+      <div class="data-container">
+        <div class="pestana estadisticas turnoff">
+          <div class="bar1">
+            <ul class="names-bar">
+              <li class="colorete">McPavor</li>
+              <li class="colorete">TheDouble</li>
+              <li class="colorete">Puchuchoni</li>
+              <li class="colorete">Sunray</li>
+              <li class="colorete">_nj?</li>
+            </ul>
+          </div>
+          <div class="bar2"></div>
+        </div>
+        <div class="pestana tabla turnoff">
+          <table class="positions">
+            <tr>
+              <th class="entrenador" style="font-size: xx-large">ENTRENADOR</th>
+              <th class="puntos">PUNTOS</th>
+              <th>EQUIPO</th>
+              <th>RAZA</th>
+              <th>TouchDowns<br />A FAVOR</th>
+              <th>TouchDowns<br />EN CONTRA</th>
+              <th>VICTORIAS</th>
+              <th>EMPATES</th>
+              <th>DERROTAS</th>
+            </tr>
+            <tr>
+              <td class="entrenador">McPavor</td>
+              <td class="puntos">15</td>
+              <td>PoneleTeam</td>
+              <td>Nurgle</td>
+              <td>9</td>
+              <td>5</td>
+              <td>4</td>
+              <td>3</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td class="entrenador">El que sangra</td>
+              <td class="puntos">12</td>
+              <td>Las Gatitas Sarasa</td>
+              <td>Dark Elfs</td>
+              <td>7</td>
+              <td>5</td>
+              <td>3</td>
+              <td>3</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td class="entrenador">Mati</td>
+              <td class="puntos">10</td>
+              <td>Ratas de Gerli</td>
+              <td>Scaven</td>
+              <td>6</td>
+              <td>4</td>
+              <td>2</td>
+              <td>4</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td class="entrenador">Alan</td>
+              <td class="puntos">6</td>
+              <td>Ratas de Dorrego y Honduras</td>
+              <td>Scaven</td>
+              <td>4</td>
+              <td>5</td>
+              <td>1</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td class="entrenador">TheDouble</td>
+              <td class="puntos">6</td>
+              <td>Los Elfos Marrones</td>
+              <td>High Elves</td>
+              <td>6</td>
+              <td>6</td>
+              <td>0</td>
+              <td>6</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td class="entrenador">Alfre</td>
+              <td class="puntos">4</td>
+              <td>Chocolate xla noticia</td>
+              <td>Underworld Denizens</td>
+              <td>4</td>
+              <td>7</td>
+              <td>1</td>
+              <td>1</td>
+              <td>5</td>
+            </tr>
+          </table>
+        </div>
+        <div class="pestana resultados">
+          <div class="fechas">
+            <h3 id="fecha-1">Fecha</h3>
+            <h3 id="fecha-2">Fecha</h3>
+            <h3 id="fecha-3">Fecha</h3>
+            <h3 id="fecha-4">Fecha</h3>
+            <h3 id="fecha-5">Fecha</h3>
+            <h1 id="fecha-1">5</h1>
+            <h1 id="fecha-2">4</h1>
+            <h1 id="fecha-3">3</h1>
+            <h1 id="fecha-4">2</h1>
+            <h1 id="fecha-5">1</h1>
+          </div>
+          <div class="marcadores"></div>
+        </div>
+        <div class="pestana new-match turnoff">
+          <h1 class="titulo-inicial-carga">CARGAR NUEVO PARTIDO</h1>
+          <div class="data-charge">
+            <div class="primera-carga">
+              <label for="local-team">EQUIPO<br />LOCAL</label>
+              <input type="text" id="local-team" />
+              <label for="local-goals">TOUCHDOWNS<br />LOCAL</label>
+              <input type="number" id="local-goals" style="width: 4rem" />
+              <label for="visitor-team">EQUIPO<br />VISITANTE</label>
+              <input type="text" id="visitor-team" />
+              <label for="visitor-goals">TOUCHDOWNS<br />VISITANTE</label>
+              <input type="number" id="visitor-goals" style="width: 4rem" />
+            </div>
+            <table class="tabla-resultados">
+              <tr>
+                <td><strong>EQUIPO LOCAL</strong></td>
+                <td>-</td>
+                <td><strong>EQUIPO VISITANTE</strong></td>
+              </tr>
+              <tr style="margin-top: 1rem">
+                <td><input type="number" id="local-posession" /></td>
+                <td>Posesión del Balón (%)</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Ocupación del Campo Propio (%)</td>
+                <td><input type="number" id="local-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Pases</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Atrapadas exitosas</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Intercepciones exitosas</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Bloqueos exitosos</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>KO Inflingidos</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Lesiones Inflingidas</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+              <tr>
+                <td><input type="number" id="local-posession" /></td>
+                <td>Muertes Inflingidas</td>
+                <td><input type="number" id="visitor-posession" /></td>
+              </tr>
+            </table>
+            <div class="dices">
+              <div class="local-dice">
+                <img src="./srcs/calavera.png" alt="" />
+                <img src="./srcs/calavp.png" alt="" />
+                <img src="./srcs/arrow.png" alt="" />
+                <img src="./srcs/pow.png" alt="" />
+                <img src="./srcs/powdge.png" alt="" />
+                <img src="./srcs/1dice.png" alt="" />
+                <img src="./srcs/2dice.png" alt="" />
+                <img src="./srcs/3dice.png" alt="" />
+                <img src="./srcs/4dice.png" alt="" />
+                <img src="./srcs/5dice.png" alt="" />
+                <img src="./srcs/6dice.png" alt="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+              </div>
+              <div class="visitor-dice">
+                <img src="./srcs/calavera.png" alt="" />
+                <img src="./srcs/calavp.png" alt="" />
+                <img src="./srcs/arrow.png" alt="" />
+                <img src="./srcs/pow.png" alt="" />
+                <img src="./srcs/powdge.png" alt="" />
+                <img src="./srcs/1dice.png" alt="" />
+                <img src="./srcs/2dice.png" alt="" />
+                <img src="./srcs/3dice.png" alt="" />
+                <img src="./srcs/4dice.png" alt="" />
+                <img src="./srcs/5dice.png" alt="" />
+                <img src="./srcs/6dice.png" alt="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+                <input type="number" name="" id="" />
+              </div>
+            </div>
+          </div>
+          <button id="sendInfo" onclick="cargar()">Cargar</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>
